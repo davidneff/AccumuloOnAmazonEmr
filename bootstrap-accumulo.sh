@@ -6,8 +6,9 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # I've externalized commands into library functions for clarity, download and source
+# NOTE: this uses a version of the script stored in MY bucket. replace this with YOUR bucket if you want to change it.
 if [ ! -f /tmp/accumulo-install-lib.sh ]; then
-	aws s3 cp s3://prometheus-emr-scripts/accumulo-install-lib.sh /tmp/accumulo-install-lib.sh
+	aws s3 cp s3://accumulo-emr-scripts/accumulo-install-lib.sh /tmp/accumulo-install-lib.sh
 fi
 source /tmp/accumulo-install-lib.sh
 
